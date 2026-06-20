@@ -62,7 +62,7 @@ public class Test6 {
         int n = 3;
         String max = str.substring(0,n);
         String min = str.substring(0,n);
-        for(int startIndex=0;startIndex<str.length()-2;startIndex++){
+        for(int startIndex=0;startIndex<str.length()-n+1;startIndex++){
             String word = str.substring(startIndex,startIndex+n);
             if(min.compareTo(word)>0){
                 min = word;
